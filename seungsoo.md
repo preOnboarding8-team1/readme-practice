@@ -12,9 +12,9 @@
 
 ## 👨‍👨‍👧‍👧 1팀 소개
 
-| <img src="https://avatars.githubusercontent.com/u/89173923?v=4"/> | <img src="https://avatars.githubusercontent.com/u/92679073?v=4"/> | <img src="https://avatars.githubusercontent.com/u/64800318?v=4"/> | <img src="https://avatars.githubusercontent.com/u/55968557?v=4"> | <img src="https://avatars.githubusercontent.com/u/73919235?v=4"/> | <img src="https://avatars.githubusercontent.com/u/78520794?v=4"> | <img src="https://avatars.githubusercontent.com/u/96967183?v=4"> | <img src="https://avatars.githubusercontent.com/u/105909665?v=4"> | <img src="https://avatars.githubusercontent.com/u/77476077?v=4"> |
+| <img src="https://avatars.githubusercontent.com/u/89173923?v=4"/> | <img src="https://avatars.githubusercontent.com/u/73919235?v=4"/> | <img src="https://avatars.githubusercontent.com/u/64800318?v=4"/> | <img src="https://avatars.githubusercontent.com/u/55968557?v=4"> | <img src="https://avatars.githubusercontent.com/u/92679073?v=4"/> | <img src="https://avatars.githubusercontent.com/u/78520794?v=4"> | <img src="https://avatars.githubusercontent.com/u/96967183?v=4"> | <img src="https://avatars.githubusercontent.com/u/105909665?v=4"> | <img src="https://avatars.githubusercontent.com/u/77476077?v=4"> |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------- |
-| <a href="https://github.com/hyejj19">[팀장] 박혜정</a>            | <a href="https://github.com/JeongTaekCho">조정택</a>              | <a href="https://github.com/minsang98">김민상</a>                 | <a href="https://github.com/rewrite0w0">오태준</a>               | <a href="https://github.com/kwakhyun">[부팀장]곽현</a>            | <a href="https://github.com/zkzk8953">이성헌</a>                 | <a href="https://github.com/badmaniacs">박경태</a>               | <a href="https://github.com/bigwave-cho">조재현</a>               | <a href="https://github.com/aydenote">최승수</a>                 |
+| <a href="https://github.com/hyejj19">[팀장] 박혜정</a>            | <a href="https://github.com/kwakhyun">[부팀장]곽현</a>            | <a href="https://github.com/minsang98">김민상</a>                 | <a href="https://github.com/rewrite0w0">오태준</a>               | <a href="https://github.com/JeongTaekCho">조정택</a>              | <a href="https://github.com/zkzk8953">이성헌</a>                 | <a href="https://github.com/badmaniacs">박경태</a>               | <a href="https://github.com/bigwave-cho">조재현</a>               | <a href="https://github.com/aydenote">최승수</a>                 |
 
 <br>
 
@@ -34,7 +34,7 @@ npm start
 <br>
 <br>
 
-## Best Practice
+## ✍ Best Practice
 
 ### [로그인 / 회원가입 Best Pratice](seungsoo-2.md)
 
@@ -44,7 +44,7 @@ npm start
 
 <br>
 
-## 폴더 구조
+## 📚 폴더 구조
 
 ```
 ⏱ 1차 과제

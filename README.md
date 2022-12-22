@@ -153,11 +153,28 @@
   - 입력된 이메일과 비밀번호가 위 조건을 만족할 때만 버튼이 활성화 되도록 해주세요
   - 보안 상 실제 사용하고 계신 이메일과 패스워드말고 테스트용 이메일, 패스워드 사용을 권장드립니다.
 
-  ```
-  코드
+  ```js
+  const validity = (id, txt) => {
+    if (id === 'email') {
+      const regex =
+        /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
+      if (txt.match(regex) === null) return '이메일 형식이 올바르지 않습니다'
+      return true
+    }
+    if (id === 'password') {
+      if (txt.length < 8) return '비밀번호는 8자리 이상이여야 합니다'
+      return true
+    }
+    if (id === 'passwordCheck') {
+      if (txt !== userInfo.password.txt) return '비밀번호가 다릅니다'
+      return true
+    }
+  }
   ```
 
-  > 설명
+  > 이메일, 패스워드 입력 시 유효성 검사 함수가 동작하며, useState로 유효성 검사 결과를 관리합니다.  
+  > 유효성 검사는 정규표현식을 이용하여 입력된 이메일, 패스워드를 판별하고 로그인 또는 회원가입 버튼의 활성화를 결정하게 됩니다.  
+  > 로그인, 회원가입에 실패할 경우, 알림 메시지를 다르게 띄워 UX를 고려하며 구현했습니다.
 
 #### Assignment2
 
@@ -166,11 +183,32 @@
   - 로그인 API는 로그인이 성공했을 시 Response Body에 JWT를 포함해서 응답합니다.
   - 응답받은 JWT는 로컬 스토리지에 저장해주세요
 
-  ```
-  코드
+  ```js
+  if (cursor) {
+    const data = {
+      email: userInfo.email.txt,
+      password: userInfo.password.txt,
+    }
+    if (menu === '로그인') {
+      const res = await authAPI.signin(data)
+      if (res.status === 200) {
+        localStorage.setItem('access_token', `Bearer ${res.data.access_token}`)
+        navigate('/todo')
+      } else if (res.response.status === 401) handleIsModal()
+    } else {
+      const res = await authAPI.signup(data)
+      if (res.status === 201) {
+        localStorage.setItem('access_token', `Bearer ${res.data.access_token}`)
+        navigate('/todo')
+      } else if (res.response.status === 400) handleIsModal()
+    }
+  }
   ```
 
-  > 설명
+  > 유효성 검사 결과에 따라 버튼 활성화 여부가 결정되도록 구현했습니다.  
+  > 조건문을 통해 클릭된 메뉴가 로그인이라면 로그인 API 호출을 실행하고 로그인이 아니라면 회원가입 API 호출을 실행됩니다.  
+  > 로그인, 회원가입 성공 시 페이지 이동에 `navigate`를 활용하였습니다.  
+  > 로그인, 회원가입 시 발생하는 오류에 대해 모달이 출력되어 사용자가 직관적으로 에러를 알 수 있게 설정했습니다.
 
 #### Assignment3
 

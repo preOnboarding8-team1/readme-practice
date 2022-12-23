@@ -1,17 +1,30 @@
-# 프로젝트 이름
-[![React Version](https://img.shields.io/badge/React-version-blue.svg)](https://ko.reactjs.org/) 
-[![Package Manager Version](https://img.shields.io/badge/npm-version-yellow)](https://www.npmjs.com/) 
+# 원티드 프리온보딩 8th - 1주차 과제
 
-프로젝트 소개 내용
+[![React Version](https://img.shields.io/badge/React-v18.2.0-blue)](https://ko.reactjs.org/)
+[![Package Manager Version](https://img.shields.io/badge/npm-v8.12.1-yellow)](https://www.npmjs.com/)
 
-## 목차
-* [팀 정보](#팀정보)
-* [디렉토리 구조](#디렉토리-구조)
-* [Features](#features)
-* [로컬 서버 구동 방법](#로컬-서버-구동-방법)
-* [배포](#배포)
+원티드 프리온보딩 프론트엔드 인턴쉽 과정의 선발과제를 팀 단위로 진행 해보면서 동료학습을 경험하고 <br />이를 바탕으로 Best Practice 를 도출해내는 과제를 수행했습니다
 
-## 팀정보✨
+### 🗓 수행 기간
+
+> 2022.12.20 - 2022.12.23
+
+<br />
+
+## 📚 목차
+
+- [팀 정보](#✨-팀-정보)
+- [Best Practice](#🔧-best-practice)
+- [실행 방법](#💻-실행-방법)
+- [배포](#📡-배포)
+- [디렉토리 구조](#📂-디렉토리-구조)
+
+<br />
+
+## ✨ 팀 정보 
+원티드 프리온보딩 프론트엔드 인턴쉽 과정 1팀입니다.
+
+### Members
 
 <table>
     <tr>
@@ -24,7 +37,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=hyejj19" title="Code">💻</a>
         </td>
         <td align="center">
             <a href="https://github.com/minsang98">
@@ -35,7 +48,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=minsang98" title="Code">💻</a>
         </td>
         <td align="center">
             <a href="https://github.com/kwakhyun">
@@ -46,7 +59,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=kwakhyun" title="Code">💻</a>
         </td>
         <td align="center">
             <a href="https://github.com/badmaniacs">
@@ -57,7 +70,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=badmaniacs" title="Code">💻</a>
         </td>
         <td align="center">
             <a href="https://github.com/zkzk8953">
@@ -68,7 +81,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=zkzk8953" title="Code">💻</a>
         </td>
         <td align="center">
             <a href="https://github.com/rewrite0w0">
@@ -79,7 +92,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=rewrite0w0" title="Code">💻</a>
         </td>
         <td align="center">
             <a href="https://github.com/bigwave-cho">
@@ -90,7 +103,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=bigwave-cho" title="Code">💻</a>
         </td> 
         <td align="center">
             <a href="https://github.com/JeongTaekCho">
@@ -101,7 +114,7 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=JeongTaekCho" title="Code">💻</a>
         </td> 
         <td align="center">
             <a href="https://github.com/aydenote">
@@ -112,55 +125,203 @@
                 </sub>
             </a>
             <br />
-            <a href="https://github.com/codesandbox/codesandbox-client/commits?author=bengummer" title="Code">💻</a>
+            <a href="https://github.com/preOnboarding8-team1/todo-list/commits?author=aydenote" title="Code">💻</a>
         </td>                 
     </tr>
 </table>
 
-## 디렉토리 구조
-<img src="https://respected-license-625.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4a4b72d4-0c22-4298-913a-d5de569182b7%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-12-22_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_8.46.55.png?id=3fd0feed-9970-406e-a696-25b493427ce4&table=block&spaceId=805c4ebe-79db-4894-a725-9e2390d2b80b&width=1150&userId=&cache=v2" width="300px" alt="directory" />
 
-프로젝트 구조에 대한 설명 ..
+### Links
 
-- [x] api
-- [x] components
-- [ ] configs
-- [ ] hooks
-- [ ] pages
-    - [ ] Login
-    - [ ] Join
+> https://www.notion.so/8-1-e616fa02748b428ebd94686ac7607fd7
 
+<br />
 
-## Features
+## 🛠 Best Practice 
 
-- [x] Todo 기능
-- [x] 로그인 및 회원가입
-- [ ] axios 모듈화 ?
-- [ ] Redux..
-- [ ] 번역
-    - [ ] 한글
-    - [ ] English
+과제에서 요구한 기능들의 구현 여부 및 Best Practice로 도출된 코드들에 대해 설명합니다.
 
-## 로컬 구동 방법
+### Assignment1
+
+- [x] 이메일과 비밀번호의 유효성 검사기능을 구현해주세요
+  - [x] 이메일 조건: `@` 포함
+  - [x] 비밀번호 조건: 8자 이상
+  - [x] 입력된 이메일과 비밀번호가 위 조건을 만족할 때만 버튼이 활성화 되도록 해주세요
+  - [x] 보안 상 실제 사용하고 계신 이메일과 패스워드말고 테스트용 이메일, 패스워드 사용을 권장드립니다.
+
+  <br />
+
+  ```js
+  const validity = (id, txt) => {
+    if (id === 'email') {
+      const regex = /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+      if (txt.match(regex) === null) return '이메일 형식이 올바르지 않습니다';
+
+      return true;
+    }
+
+    if (id === 'password') {
+      if (txt.length < 8) return '비밀번호는 8자리 이상이여야 합니다';
+
+      return true;
+    }
+
+    if (id === 'passwordCheck') {
+      if (txt !== userInfo.password.txt) return '비밀번호가 다릅니다';
+
+      return true;
+    }
+  }
+  ```
+
+  <br />
+
+  > 📌 이메일, 패스워드 입력 시 유효성 검사 함수가 동작하며, useState로 유효성 검사 결과를 관리합니다.  
+  > 📌 유효성 검사는 정규표현식을 이용하여 입력된 이메일, 패스워드를 판별하고 로그인 또는 회원가입 버튼의 활성화를 결정하게 됩니다.  
+  > 📌 로그인, 회원가입에 실패할 경우, 알림 메시지를 다르게 띄워 UX를 고려하며 구현했습니다.
+
+### Assignment2
+
+- [x] 로그인 API를 호출하고, 올바른 응답을 받았을 때 `/todo` 경로로 이동해주세요
+
+  - [x] 로그인 API는 로그인이 성공했을 시 Response Body에 JWT를 포함해서 응답합니다.
+  - [x] 응답받은 JWT는 로컬 스토리지에 저장해주세요
+
+  <br />
+
+  ```js
+  if (cursor) {
+    const data = {
+      email: userInfo.email.txt,
+      password: userInfo.password.txt,
+    }
+    
+    if (menu === '로그인') {
+      const res = await authAPI.signin(data)
+
+      if (res.status === 200) {
+        localStorage.setItem('access_token', `Bearer ${res.data.access_token}`)
+        navigate('/todo')
+      } else if (res.response.status === 401) handleIsModal();
+      
+    } else {
+      const res = await authAPI.signup(data);
+
+      if (res.status === 201) {
+        localStorage.setItem('access_token', `Bearer ${res.data.access_token}`)
+        navigate('/todo')
+      } else if (res.response.status === 400) handleIsModal();
+    }
+  }
+  ```
+  <br />
+
+  > 📌 유효성 검사 결과에 따라 버튼 활성화 여부가 결정되도록 구현했습니다.  
+  > 📌 조건문을 통해 클릭된 메뉴가 로그인이라면 로그인 API 호출을 실행하고 로그인이 아니라면 회원가입 API 호출을 실행됩니다.  
+  > 📌 로그인, 회원가입 성공 시 페이지 이동에 `navigate`를 활용하였습니다.  
+  > 📌 로그인, 회원가입 시 발생하는 오류에 대해 모달이 출력되어 사용자가 직관적으로 에러를 알 수 있게 설정했습니다.
+
+### Assignment3
+
+- [x] 로그인 여부에 따른 리다이렉트 처리를 구현해주세요
+  - [x] 로컬 스토리지에 토큰이 있는 상태로 `/` 페이지에 접속한다면 `/todo` 경로로 리다이렉트 시켜주세요
+  - [x] 로컬 스토리지에 토큰이 없는 상태로 `/todo`페이지에 접속한다면 `/` 경로로 리다이렉트 시켜주세요
+
+  <br />
+
+  ```
+  코드
+  ```
+
+  <br />
+
+  > 설명
+
+---
+
+### Assignment4
+
+- [x] `/todo`경로에 접속하면 투두 리스트의 목록을 볼 수 있도록 해주세요
+  - [x] 리스트 페이지에는 투두 리스트의 내용과 완료 여부가 표시되어야 합니다.
+  - [x] 리스트 페이지에는 입력창과 추가 버튼이 있고, 추가 버튼을 누르면 입력창의 내용이 새로운 투두 리스트로 추가되도록 해주세요
+
+  <br />
+
+  ```
+  코드
+  ```
+
+  <br />
+
+  > 설명
+
+### Assignment5
+
+- [x] 투두 리스트의 수정, 삭제 기능을 구현해주세요
+  - [x] 투두 리스트의 개별 아이템 우측에 수정버튼이 존재하고 해당 버튼을 누르면 수정모드가 활성화되고 투두 리스트의 내용을 수정할 수 있도록 해주세요
+  - [x] 수정모드에서는 개별 아이템의 우측에 제출버튼과 취소버튼이 표시되며 해당 버튼을 통해서 수정 내용을 제출하거나 수정을 취소할 수 있도록 해주세요
+  - [x] 투두 리스트의 개별 아이템 우측에 삭제버튼이 존재하고 해당 버튼을 누르면 투두 리스트가 삭제되도록 해주세요
+
+  <br />
+
+  ```
+  코드
+  ```
+
+  <br />
+
+  > 설명
+
+<br />
+
+## 💻 실행 방법
+
+해당 프로젝트를 실행하기 위해서는 Git 과 Npm (node.js를 포함) 이 설치되어 있어야 합니다.
+
 
 1. 레파지토리 클론
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+
    ```
-2. NPM packages 설치
-   ```sh
+   git clone https://github.com/preOnboarding8-team1/todo-list.git
+   ```
+2. packages 설치
+
+   ```
    npm install
    ```
-3. API URL 입력 `.env`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. 실행
+
    ```
-4. 실행 
-   ```sh
    npm start
    ```
 
+## 📡 배포
+AWS EC2를 사용하여 배포되었습니다.
 
-## 배포
+> https://fefeafea
 
-베포에 대한 설명 및 배포 링크 첨부 
+<br />
+
+## 📂 디렉토리 구조
+
+<details>
+    <summary>Repository Overview</summary>
+    <div>
+
+        📂 src
+        ┣ 📂 api
+        ┃ ┣ 📝auth.js
+        ┃ ┗ 📝todo.js
+        ┣ 📂 components
+        ┃ ┣ 📝Button.jsx
+        ┃ ┣ 📝InputBox.jsx
+        ┃ ┣ 📝Todo.jsx
+        ┃ ┣ 📝TodoInput.jsx
+        ┃ ┗ 📝TodoList.jsx
+        ┗ 📂 pages
+          ┣ 📝Login.jsx
+          ┗ 📝Todo.jsx
+</details>
+
+
